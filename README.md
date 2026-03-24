@@ -20,9 +20,8 @@ The purpose of this subdivision is to allow tasks to be executed independently, 
 
 **Project structure**
 
-
+```bash
 project/
-
 ├── main.py
 ├── tasks/
 │   └── tasks.py
@@ -38,6 +37,7 @@ project/
 │   └── provider\_c\_detail.py
 ├── database/
 │   └── db\_manager.py
+```
 
 
 **Requirements**
