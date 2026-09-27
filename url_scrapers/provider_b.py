@@ -15,7 +15,7 @@ class ProviderBScraper(BaseScraper):
         if alt_main_div.count() > 0:
             return self.alt_fetch(alt_main_div)
 
-        main_div = self.page.locator("div.areas-duoc-uc")
+        main_div = self.page.locator("div.areas-listado")
         a_locators = main_div.locator("a")
     
         if main_div.count() < 1 or a_locators.count() < 1:

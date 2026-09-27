@@ -5,7 +5,7 @@ class ProviderBDetailScraper(BaseDetailScraper):
         super().__init__(db_manager, "cursos_prov_b", "prov_b")
     
     def fetch(self, course_dict: dict[str, str]) -> str | None:
-        main_div = self.page.locator("div.content-duoc-uc")
+        main_div = self.page.locator("div.content-principal")
             
         if main_div.count() < 1:
             print("There is currently no available information for this course.")
